@@ -1,0 +1,20 @@
+CACHE MANIFEST
+# version 2 (2011/02/12)
+
+CACHE:
+index.html
+favicon.ico
+img/apple-touch-icon.png
+img/apple-touch-icon-114.png
+css/normalize.css
+css/calendar.css
+css/calendaranim.css
+js/jquery-1.7.1.min.js
+js/jquery.swipeListener.js
+js/calendarpage.js
+js/calendardata.js
+js/calendarmenu.js
+js/calendar.js
+
+NETWORK:
+https://www.googleapis.com/

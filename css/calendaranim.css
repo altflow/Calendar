@@ -1,0 +1,209 @@
+/**
+ * CSS for calendar animation
+ */
+
+/**
+ *  Calendar Table Animation
+ */
+.movenext {
+	-webkit-transition-duration: 400ms;
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transform: translateX(-320px);	
+}
+
+.prepend {
+	position: absolute;
+	left: -320px;
+}
+
+.moveprev {
+	-webkit-transition-duration: 400ms;
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transform: translateX(320px);	
+}
+
+/**
+ * Menu Animation
+ */
+#menubutton {
+	-webkit-transition: all 0.2s linear;
+	-webkit-transform: rotate(45deg);
+	-webkit-transform-style: preserve-3d;
+}
+
+.opened #menubutton {
+	-webkit-transition: all 0.2s linear;
+	-webkit-transform: rotate(0deg);
+}
+
+.appeared li, .disappeared li {
+	-webkit-animation-duration: 240ms;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-delay: 40ms;
+}
+
+#menuitems.anim li {
+	visibility: visible;
+}
+
+.appeared #red {
+	-webkit-animation-name: "show-red";
+}
+
+@-webkit-keyframes "show-red" {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0px);
+		-webkit-animation-timing-function: cubic-bezier(1, 0.6, 0.57, 0.75);
+	}
+	
+	80% {
+		-webkit-transform: translate3d(18px, -110px, 0px);
+		-webkit-animation-timing-function: cubic-bezier(0.45, 0.97, 0.51, 0.78);
+	}
+	
+	100% {
+		-webkit-transform: translate3d(6px, -97px, 0px);
+	}
+}
+
+.disappeared #red {
+	-webkit-animation-name: "hide-red";
+}
+
+@-webkit-keyframes "hide-red" {
+	0% {
+		-webkit-transform: translate3d(6px, -97px, 0px);
+		-webkit-animation-timing-function: cubic-bezier(1, 0.6, 0.57, 0.75);
+	}
+	
+	70% {
+		-webkit-transform: translate3d(18px, -110px, 0px);
+		-webkit-animation-timing-function: cubic-bezier(0.45, 0.97, 0.51, 0.78);
+	}
+	/*
+	100% {
+		-webkit-transform: translate3d(0, 0, 0px);
+	}
+	*/
+}
+
+
+.appeared #yellow {
+	-webkit-animation-name: "show-yellow";
+}
+
+@-webkit-keyframes "show-yellow" {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0px);
+		-webkit-animation-timing-function: cubic-bezier(1, 0.6, 0.57, 0.75);
+	}
+	
+	80% {
+		-webkit-transform: translate3d(64px, -94px, 0px);
+		-webkit-animation-timing-function: cubic-bezier(0.45, 0.97, 0.51, 0.78);
+	}
+	
+	100% {
+		-webkit-transform: translate3d(51px, -82px, 0px);
+	}
+}
+
+.disappeared #yellow {
+	-webkit-animation-name: "hide-yellow";
+}
+
+@-webkit-keyframes "hide-yellow" {
+	0% {
+		-webkit-transform: translate3d(51px, -82px, 0px);
+		-webkit-animation-timing-function: cubic-bezier(1, 0.6, 0.57, 0.75);
+	}
+	
+	70% {
+		-webkit-transform: translate3d(64px, -94px, 0px);
+		-webkit-animation-timing-function: cubic-bezier(0.45, 0.97, 0.51, 0.78);
+	}
+	
+	100% {
+		-webkit-transform: translate3d(0, 0, 0px);
+	}
+}
+
+.appeared #green {
+	-webkit-animation-name: "show-green";
+}
+
+@-webkit-keyframes "show-green" {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0px);
+		-webkit-animation-timing-function: cubic-bezier(1, 0.6, 0.57, 0.75);
+	}
+	
+	80% {
+		-webkit-transform: translate3d(94px, -64px, 0px);
+		-webkit-animation-timing-function: cubic-bezier(0.45, 0.97, 0.51, 0.78);
+	}
+	
+	100% {
+		-webkit-transform: translate3d(82px, -48px, 0px);
+	}
+}
+
+.disappeared #green {
+	-webkit-animation-name: "hide-green";
+}
+
+@-webkit-keyframes "hide-green" {
+	0% {
+		-webkit-transform: translate3d(82px, -48px, 0px);
+		-webkit-animation-timing-function: cubic-bezier(1, 0.6, 0.57, 0.75);
+	}
+	
+	70% {
+		-webkit-transform: translate3d(94px, -64px, 0px);
+		-webkit-animation-timing-function: cubic-bezier(0.45, 0.97, 0.51, 0.78);
+	}
+	
+	100% {
+		-webkit-transform: translate3d(0, 0, 0px);
+	}
+}
+
+.appeared #exit {
+	-webkit-animation-name: "show-exit";
+}
+
+@-webkit-keyframes "show-exit" {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0px);
+		-webkit-animation-timing-function: cubic-bezier(1, 0.6, 0.57, 0.75);
+	}
+	
+	80% {
+		-webkit-transform: translate3d(110px, -18px, 0px);
+		-webkit-animation-timing-function: cubic-bezier(0.45, 0.97, 0.51, 0.78);
+	}
+	
+	100% {
+		-webkit-transform: translate3d(97px, -6px, 0px);
+	}
+}
+
+.disappeared #exit {
+	-webkit-animation-name: "hide-exit";
+}
+
+@-webkit-keyframes "hide-exit" {
+	0% {
+		-webkit-transform: translate3d(97px, -6px, 0px);
+		-webkit-animation-timing-function: cubic-bezier(1, 0.6, 0.57, 0.75);
+	}
+	
+	70% {
+		-webkit-transform: translate3d(110px, -18px, 0px);
+		-webkit-animation-timing-function: cubic-bezier(0.45, 0.97, 0.51, 0.78);
+	}
+	
+	100% {
+		-webkit-transform: translate3d(0, 0, 0px);
+	}
+}

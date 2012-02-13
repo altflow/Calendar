@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="calendar.appcache">
+<head>
+	<meta charset="UTF-8">
+	<title>Calendar</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/calendar.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/calendaranim.css" media="all" />
+
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114.png" />
+
+	<meta name="viewport" content="width=device-width, height=device-height, maximum-scale=1" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+</head>
+<body>
+
+<div id="year"></div>
+<div id="container"></div>
+<div id="menu">
+	<div id="menubutton">✖</div>
+</div>
+<ul id="menuitems" class="disappeared">
+	<li id="red"></li>
+	<li id="yellow"></li>
+	<li id="green"></li>
+	<li id="exit"></li>
+</ul>
+
+
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.swipeListener.js"></script>
+<script type="text/javascript" src="js/calendarpage.js"></script>
+<script type="text/javascript" src="js/calendarmenu.js"></script>
+<script type="text/javascript" src="js/calendardata.js"></script>
+<script type="text/javascript" src="js/calendar.js"></script>
+</body>
+</html>
